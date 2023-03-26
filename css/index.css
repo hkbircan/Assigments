@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Silkscreen:regular,700);
 
 body {
   height: 200vh;
+  font-family: ;
 }
 
 #myVideo {
@@ -24,9 +26,8 @@ h2 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: "Roboto", sans-serif;
+  font-family:"Silkscreen";
   font-size: 2rem;
-  font-style: italic;
 }
 
 .app_title {
@@ -36,7 +37,7 @@ h2 {
 }
 
 .underline {
-  width: 17rem;
+  width: 20rem;
   height: 0.25rem;
   background: hsl(120, 100%, 49%);
   margin-top: 0.5rem;
@@ -54,9 +55,11 @@ h2 {
   width: 20%;
   border: 2px solid rgb(0, 255, 0);
   border-radius: 25px;
-  color: #00fc00;
+  color: #00ff00;
   padding: 16px;
   text-align: center;
+  background-color: #00000040;
+  font-family:"Silkscreen";
 }
 
 .listhtml,
@@ -64,7 +67,7 @@ h2 {
 .listjs,
 .listreact {
   list-style-type: lower-greek;
-  color: rgb(3, 246, 3);
+  color: rgb(234, 255, 0);
   display: none;
 }
 .html:hover .listhtml,
@@ -94,7 +97,7 @@ li {
   text-align: start;
 }
 a {
-  color: #00fc00;
+  color: #ff0000;
   text-decoration: none;
 }
 
