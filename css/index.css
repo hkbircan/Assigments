@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header {
+  padding-top: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+h2 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.app_title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: hsl(120, 100%, 49%);
+}
+
+.underline {
+  width: 17rem;
+  height: 0.25rem;
+  background: hsl(120, 100%, 49%);
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-links {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  margin: 1rem auto;
+  height: 1rem;
+  width: 20%;
+  border: 2px solid rgb(0, 255, 0);
+  border-radius: 25px;
+  color: #00fc00;
+  padding: 16px;
+  text-align: center;
+}
+
+.listhtml,
+.listbootstrap,
+.listjs,
+.listreact {
+  list-style-type: lower-greek;
+  color: rgb(3, 246, 3);
+  display: none;
+}
+.html:hover .listhtml,
+.bootstrap:hover .listbootstrap,
+.js:hover .listjs,
+.react:hover .listreact,
+.html:active .listhtml,
+.bootstrap:active .listbootstrap,
+.js:active .listjs,
+.react:active .listreact {
+  display: block;
+  height: 100%;
+}
+.html:hover,
+.bootstrap:hover,
+.js:hover,
+.react:hover,
+.html:active,
+.bootstrap:active,
+.js:active,
+.react:active {
+  display: block;
+  height: 100%;
+}
+li {
+  margin-top: 10px;
+  text-align: start;
+}
+a {
+  color: #00fc00;
+  text-decoration: none;
+}
+
+li:hover, li:active {
+  transform: scale(1, 2);
+  border-radius: 25px;
+  font-weight: 900;
+}
+
+/* .btn-links ul{
+    list-style: none;
+    text-decoration: none;
+    color: #00fc00;
+    width: 7rem;
+    display: inline-block;
+    border-radius: 25px;
+    margin-left: -5rem;
+
+  } */
+/* .btn-links ul {
+    text-decoration: none;
+    color: #00fc00;
+    width: 7rem;
+    padding: 16px;
+    display: inline-block;
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 25px;
+    
+  }
+
+.btn-links a {
+  text-decoration: none;
+  color: #00fc00;
+  width: 7rem;
+  padding: 16px;
+  display: inline-block;
+  border: 1px solid rgb(0, 255, 0);
+  border-radius: 25px;
+  
+}
+.btn-links a:hover {
+    color: #000000;
+  background: #00fc00;
+  transition: background-color 5s, color 2s;
+  height: 15rem;
+}
+ */
