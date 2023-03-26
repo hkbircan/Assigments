@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Silkscreen:regular,700);
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 200vh;
-  font-family: ;
 }
 
 #myVideo {
@@ -62,11 +67,16 @@ h2 {
   font-family: "Silkscreen";
   font-size: medium;
 }
+p {
+  position: relative;
+  top: -0.6rem;
+}
 
 .listhtml,
 .listbootstrap,
 .listjs,
 .listreact {
+  margin-left: 40px;
   list-style-type: circle;
   color: rgb(234, 255, 0);
   display: none;
@@ -160,10 +170,14 @@ li:active a{
   .listbootstrap,
   .listjs,
   .listreact {
-    margin-left: -15px;
+    margin-left: 30px;
     list-style-type: circle;
     color: rgb(234, 255, 0);
     display: none;
+  }
+  p {
+    position: relative;
+    top: -0.6rem;
   }
   .html:hover .listhtml,
   .bootstrap:hover .listbootstrap,
@@ -173,7 +187,7 @@ li:active a{
   .bootstrap:active .listbootstrap,
   .js:active .listjs,
   .react:active .listreact {
-    background-color: #0000009e;
+    /* background-color: #0000009e; */
     display: block;
     height: 100%;
   }
@@ -185,7 +199,7 @@ li:active a{
   .bootstrap:active,
   .js:active,
   .react:active {
-    background-color: #000000d6;
+    background-color: #000000eb;
     display: block;
     height: 100%;
   }
@@ -214,11 +228,20 @@ li:active a{
     font-family: "Silkscreen";
     font-size: smaller;
   }
+  p {
+    position: relative;
+    top: -1rem;
+  }
+  .first2 {
+    position: relative;
+    top: -8px;
+    left: -10px;
+  }
   .listhtml,
   .listbootstrap,
   .listjs,
   .listreact {
-    margin-left: -15px;
+    margin-left: 4px;
     list-style-type: circle;
     color: rgb(234, 255, 0);
     display: none;
@@ -231,7 +254,7 @@ li:active a{
   .bootstrap:active .listbootstrap,
   .js:active .listjs,
   .react:active .listreact {
-    background-color: #0000009e;
+    /* background-color: #0000009e; */
     display: block;
     height: 100%;
   }
@@ -243,7 +266,7 @@ li:active a{
   .bootstrap:active,
   .js:active,
   .react:active {
-    background-color: #000000d6;
+    background-color: #000000f2;
     display: block;
     height: 100%;
   }
