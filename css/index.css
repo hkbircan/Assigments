@@ -79,6 +79,7 @@ h2 {
 .bootstrap:active .listbootstrap,
 .js:active .listjs,
 .react:active .listreact {
+  background-color: #0000009e;
   display: block;
   height: 100%;
 }
@@ -90,6 +91,7 @@ h2 {
 .bootstrap:active,
 .js:active,
 .react:active {
+  background-color: #000000d6;
   display: block;
   height: 100%;
 }
