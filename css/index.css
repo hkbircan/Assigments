@@ -26,7 +26,7 @@ h2 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family:"Silkscreen";
+  font-family: "Silkscreen";
   font-size: 2rem;
 }
 
@@ -58,16 +58,16 @@ h2 {
   color: #00ff00;
   padding: 16px;
   text-align: center;
-  background-color: #00000040;
-  font-family:"Silkscreen";
-  font-size: smaller;
+  background-color: #00000026;
+  font-family: "Silkscreen";
+  font-size: medium;
 }
 
 .listhtml,
 .listbootstrap,
 .listjs,
 .listreact {
-  list-style-type: lower-greek;
+  list-style-type: circle;
   color: rgb(234, 255, 0);
   display: none;
 }
@@ -79,7 +79,7 @@ h2 {
 .bootstrap:active .listbootstrap,
 .js:active .listjs,
 .react:active .listreact {
-  background-color: #0000009e;
+  /* background-color: #0000009e; */
   display: block;
   height: 100%;
 }
@@ -91,7 +91,7 @@ h2 {
 .bootstrap:active,
 .js:active,
 .react:active {
-  background-color: #000000d6;
+  background-color: rgba(0, 0, 0, 0.989);
   display: block;
   height: 100%;
 }
@@ -100,52 +100,160 @@ li {
   text-align: start;
 }
 a {
+  display: block;
   color: #ff0000;
   text-decoration: none;
 }
 
 li:hover,
 li:active {
-  transform: scale(1, 2);
-  border-radius: 25px;
-  font-weight: 900;
+  list-style-type: disc;
 }
 
-/* .btn-links ul{
-    list-style: none;
-    text-decoration: none;
-    color: #00fc00;
-    width: 7rem;
-    display: inline-block;
-    border-radius: 25px;
-    margin-left: -5rem;
+li:hover a,
+li:active a {
+  color: rgb(234, 255, 0);
+  font-weight: 1000;
+  border-radius: 25px;
+  /* transform: rotateY(90deg);  */
+  transform: translateX(10px);
+  transition: transform 0.1s;
+}
+/* }
+li:active a{
+  transform: rotateY(180deg);
+  transition: transform .2s;
+}
+li:hover a,
+li:active a{
+  transform: rotateY(270deg);
+  transition: transform .3s;
+}
+li:active a{
+  transform: rotateY(360deg);
+  transition: transform .4s;
+}
+li:active a{
+  transform: rotateY(450deg);
+  transition: transform .5s;
+}
+li:active a{
+  transform: rotateY(540deg);
+  transition: transform .6s;
+} */
 
-  } */
-/* .btn-links ul {
-    text-decoration: none;
-    color: #00fc00;
-    width: 7rem;
+@media screen and (max-width: 992px) {
+  .btn {
+    margin: 1rem auto;
+    height: 1rem;
+    width: 20%;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 25px;
+    color: #00ff00;
     padding: 16px;
-    display: inline-block;
-    border: 1px solid rgb(0, 255, 0);
-    border-radius: 25px;
-    
+    text-align: center;
+    background-color: #00000026;
+    font-family: "Silkscreen";
+    font-size: small;
   }
+  .listhtml,
+  .listbootstrap,
+  .listjs,
+  .listreact {
+    margin-left: -15px;
+    list-style-type: circle;
+    color: rgb(234, 255, 0);
+    display: none;
+  }
+  .html:hover .listhtml,
+  .bootstrap:hover .listbootstrap,
+  .js:hover .listjs,
+  .react:hover .listreact,
+  .html:active .listhtml,
+  .bootstrap:active .listbootstrap,
+  .js:active .listjs,
+  .react:active .listreact {
+    background-color: #0000009e;
+    display: block;
+    height: 100%;
+  }
+  .html:hover,
+  .bootstrap:hover,
+  .js:hover,
+  .react:hover,
+  .html:active,
+  .bootstrap:active,
+  .js:active,
+  .react:active {
+    background-color: #000000d6;
+    display: block;
+    height: 100%;
+  }
+  li:hover a,
+  li:active a {
+    color: rgb(234, 255, 0);
+    /* font-weight: 1000; */
+    border-radius: 25px;
+    transform: translateX(0px);
+    transition: transform 0.1s;
+    /* transform: rotateY(90deg); */
+  }
+}
 
-.btn-links a {
-  text-decoration: none;
-  color: #00fc00;
-  width: 7rem;
-  padding: 16px;
-  display: inline-block;
-  border: 1px solid rgb(0, 255, 0);
-  border-radius: 25px;
-  
+@media screen and (max-width: 576px) {
+  .btn {
+    margin: 1rem auto;
+    height: 1rem;
+    width: 20%;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 25px;
+    color: #00ff00;
+    padding: 16px;
+    text-align: center;
+    background-color: #00000026;
+    font-family: "Silkscreen";
+    font-size: smaller;
+  }
+  .listhtml,
+  .listbootstrap,
+  .listjs,
+  .listreact {
+    margin-left: -15px;
+    list-style-type: circle;
+    color: rgb(234, 255, 0);
+    display: none;
+  }
+  .html:hover .listhtml,
+  .bootstrap:hover .listbootstrap,
+  .js:hover .listjs,
+  .react:hover .listreact,
+  .html:active .listhtml,
+  .bootstrap:active .listbootstrap,
+  .js:active .listjs,
+  .react:active .listreact {
+    background-color: #0000009e;
+    display: block;
+    height: 100%;
+  }
+  .html:hover,
+  .bootstrap:hover,
+  .js:hover,
+  .react:hover,
+  .html:active,
+  .bootstrap:active,
+  .js:active,
+  .react:active {
+    background-color: #000000d6;
+    display: block;
+    height: 100%;
+  }
+  li:hover a,
+  li:active a {
+    color: rgb(234, 255, 0);
+    /* font-weight: 1000; */
+    border-radius: 25px;
+    transform: translateX(0px);
+    transition: transform 0.1s;
+    /* transform: rotateY(90deg); */
+  }
 }
-.btn-links a:hover {
-    color: #000000;
-  background: #00fc00;
-  transition: background-color 5s, color 2s;
-  height: 15rem;
-}
- */
