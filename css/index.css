@@ -14,10 +14,9 @@ body {
 
 header {
   padding-top: 3rem;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
-  z-index: 1;
 }
 
 h2 {
